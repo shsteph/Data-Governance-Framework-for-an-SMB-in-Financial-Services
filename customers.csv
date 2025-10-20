@@ -1,0 +1,8 @@
+Attribute,Domain,Description,Classification,Steward,Retention,Regulatory Ref,Notes
+customer_id,Customers,Unique identifier for customer,Restricted,Data Governance / IT,Permanent,GLBA,Primary key; not shared externally
+first_name,Customers,Customer first name,Confidential,Member Services,7 years post-closure,GLBA,PII
+last_name,Customers,Customer last name,Confidential,Member Services,7 years post-closure,GLBA,PII
+dob,Customers,Date of birth,Restricted,Member Services,7 years post-closure,GLBA,Sensitive PII
+ssn,Customers,Social Security Number,Restricted,Compliance,7 years post-closure,"GLBA, NCUA",Sensitive PII
+account_open_date,Customers,Account start date,Internal,Operations,7 years,FFIEC,Operational metadata
+risk_rating,Customers,Risk score assigned by AML system,Restricted,Compliance,5 years,"FFIEC, BSA/AML",Derived data

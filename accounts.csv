@@ -1,0 +1,8 @@
+Attribute,Domain,Description,Classification,Steward,Retention,Regulatory Ref,Notes
+account_id,Accounts,Unique identifier for account,Restricted,Operations,Permanent,FFIEC,Primary key
+customer_id,Accounts,Foreign key to Customer table,Restricted,Operations,Permanent,GLBA,Links customer record
+account_type,Accounts,"e.g., Checking, Savings",Internal,Product Management,7 years,FFIEC,Non-sensitive metadata
+open_date,Accounts,Date account was opened,Internal,Operations,7 years,FFIEC,
+close_date,Accounts,Account closure date,Internal,Operations,7 years,FFIEC,
+branch_code,Accounts,Code for branch of account origination,Internal,Branch Ops,7 years,,
+balance,Accounts,Account balance,Restricted,Finance,7 years,GLBA,Sensitive financial data
